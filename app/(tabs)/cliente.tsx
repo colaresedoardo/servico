@@ -2,6 +2,7 @@ import { Text, View, StyleSheet } from 'react-native';
 import ClienteForm from '../components/cliente/clienteForm';
 import { useEffect, useState } from 'react';
 import { initializeDatabase } from '../utils/database';
+import ClienteList from '../components/cliente/clienteList';
 
 
 export default function ClienteScreen() {
@@ -13,6 +14,8 @@ export default function ClienteScreen() {
     <View style={styles.container}>
       <Text style={styles.text}>Cadastro Cliente</Text>
       <ClienteForm onClienteAdded={() => setUpdateList(!updateList)} />
+      
+      <ClienteList key={updateList.toString()} />
     </View>
   );
 }

@@ -25,6 +25,7 @@ const ClienteForm = ({ onClienteAdded }: { onClienteAdded: () => void }) => {
 
   return (
     <View style={styles.container}>
+        <Text>teste</Text>
       <Text style={styles.label}>Nome</Text>
       <Controller
         control={control}
