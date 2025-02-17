@@ -64,8 +64,7 @@ const ClienteForm = ({ onClienteAdded }: { onClienteAdded: () => void }) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
-    backgroundColor: '#fff',
+    padding: 16
   },
   label: {
     fontSize: 16,
